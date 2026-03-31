@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UGTECH NEWS - Stay updated with the latest news from around the world. Technology, Business, Entertainment, Health, Science, and Sports news.">
+    <meta name="keywords" content="news, technology, business, entertainment, health, science, sports, latest news">
+    <meta name="author" content="UGTECH NEWS">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="UGTECH NEWS - Latest News from Around the World">
+    <meta property="og:description" content="Stay updated with the latest news from around the world. Technology, Business, Entertainment, Health, Science, and Sports news.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+    <meta property="og:site_name" content="UGTECH NEWS">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UGTECH NEWS - Latest News from Around the World">
+    <meta name="twitter:description" content="Stay updated with the latest news from around the world.">
+    <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>UGTECH NEWS - Latest News from Around the World</title>
+
+    <!-- Google AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <!-- Structured Data (Schema Markup) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": "UGTECH NEWS",
+        "url": "https://yourwebsite.com",
+        "logo": "https://yourwebsite.com/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://twitter.com/yourhandle"
+        ]
+    }
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>UGTECH NEWS</h1>
+            <p>Stay updated with the latest news from around the world</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">UGTECH NEWS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Top Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Google AdSense Ad Unit - Replace with your actual ad code -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters" id="categoryFilters">
+            <button class="filter-btn active" data-category="general">General</button>
+            <button class="filter-btn" data-category="technology">Technology</button>
+            <button class="filter-btn" data-category="business">Business</button>
+            <button class="filter-btn" data-category="entertainment">Entertainment</button>
+            <button class="filter-btn" data-category="health">Health</button>
+            <button class="filter-btn" data-category="science">Science</button>
+            <button class="filter-btn" data-category="sports">Sports</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- News Grid -->
+            <div class="news-section">
+                <div class="news-grid" id="newsGrid">
+                    <div class="loading">Loading news...</div>
+                </div>
+
+                <!-- In-Article Ad -->
+                <div class="ad-container in-article-ad">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- Google AdSense In-Article Ad Unit -->
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn">Load More News</button>
+                </div>
+
+                <div class="last-updated" id="lastUpdated"></div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Sidebar Ad -->
+                <div class="ad-container sidebar-ad">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- Google AdSense Sidebar Ad Unit -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="vertical"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Trending News -->
+                <div class="trending-section">
+                    <h3><i class="bi bi-fire"></i> Trending News</h3>
+                    <div id="trendingNews">
+                        <div class="loading">Loading trending news...</div>
+                    </div>
+                </div>
+
+                <!-- Another Sidebar Ad -->
+                <div class="ad-container sidebar-ad">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- Fallback Ad Network - Monetag or PropellerAds -->
+                    <!-- Replace this with your fallback ad code -->
+                    <div class="fallback-ad">
+                        <!-- Monetag/PropellerAds code goes here -->
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Click Log Section -->
+        <div class="click-log-section">
+            <div class="click-log-header">
+                <h2>Click Log</h2>
+                <button class="clear-log-btn" id="clearLogBtn">Clear Log</button>
+            </div>
+            <table class="click-log-table">
+                <thead>
+                    <tr>
+                        <th>Article Title</th>
+                        <th>Click Time</th>
+                        <th>Device</th>
+                    </tr>
+                </thead>
+                <tbody id="clickLogBody">
+                    <tr>
+                        <td colspan="3" class="empty-log-message">No clicks logged yet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <a href="#">Technology</a>
+                <a href="#">Business</a>
+                <a href="#">Entertainment</a>
+                <a href="#">Health</a>
+                <a href="#">Science</a>
+                <a href="#">Sports</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 UGTECH NEWS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
